@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FinControl - Mini Fintech Dashboard
 
-## Getting Started
+A modern personal finance tracker built with Next.js, TypeScript, and Tailwind CSS. The application allows users to manage their income and expenses, visualize spending patterns, and gain insights into their financial habits.
 
-First, run the development server:
+## Features
+* Add income and expense transactions
+* Categorize transactions
+* View transaction history
+* Filter transactions by category and date
+* Dashboard summary showing:
+  * Total Income
+  * Total Expenses
+  * Net Balance
+  * Top Spending Category
+* Spending analytics using charts
+* Rule-based financial insights
+* User-specific data storage using Local Storage
+* Responsive design for desktop and mobile devices
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Tech Stack
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+* Recharts
+* Local Storage
+
+## Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/shreyamahalingshetti/Finance-Tracker.git
+   ```
+
+2. **Navigate to the project directory**
+   ```bash
+   cd Finance-Tracker
+   ```
+
+3. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open http://localhost:3000**
+
+## Project Structure
+```text
+src/
+├── app/
+├── components/
+├── hooks/
+├── utils/
+├── types/
+└── data/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Financial Insight Logic
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The application generates simple rule-based insights such as:
+* Highest spending category
+* Expense-to-income ratio
+* Monthly spending trends
+* Savings observations
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Data Storage
 
-## Learn More
+Transaction data is stored locally in the browser using Local Storage. Each user's data is isolated using a unique storage key.
 
-To learn more about Next.js, take a look at the following resources:
+## Future Improvements
+* Cloud database integration
+* Authentication with Google OAuth
+* Budget planning and alerts
+* Export transactions to CSV
+* Recurring transactions
+* AI-powered spending recommendations
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Live Demo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Deployed URL: 
 
-## Deploy on Vercel
+## Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Shreya S Mahalingshetti**
